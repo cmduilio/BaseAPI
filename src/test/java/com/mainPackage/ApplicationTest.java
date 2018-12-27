@@ -8,6 +8,7 @@ import static org.junit.Assert.assertTrue;
 
 import com.mainPackage.model.Day;
 import com.mainPackage.repository.DayRepository;
+import com.mainPackage.repository.Repository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,7 +31,7 @@ public class ApplicationTest {
 	private PingController pingController;
     
 	@Autowired
-	private DayRepository dayRepository;
+	private Repository dayRepository;
 
 	
 	@Test
@@ -40,7 +41,7 @@ public class ApplicationTest {
 	}
 	@Test
 	public void callDayService() {
-		Day day = dayRepository.getById(361);
+		Day day = ((DayRepository) dayRepository).getById(361);
 		assertTrue(day.getWeather().equals("asd"));
 	}
 	
