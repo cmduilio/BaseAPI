@@ -34,9 +34,9 @@ public class DayRepositoryImpl implements DayRepository {
     @Transactional
 	@SuppressWarnings("unchecked")
 	public List<Day> getList() {
-		List<Day> daysList = entityManager.createQuery("from Day").getResultList();
+		List<Day> daysList = entityManager.createQuery("select d from Day d").getResultList();
 		for (Day p : daysList) {
-			logger.info("Day List::" + p);
+			logger.info("Day List::" + p.getDay() + "-" + p.getWeather());
 		}
 		return daysList;
 	}
