@@ -31,4 +31,5 @@ public class Day {
 	public void setWeather(String weather) {
 		this.weather = weather;
 	}
+
 }
