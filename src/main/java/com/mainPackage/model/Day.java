@@ -1,4 +1,4 @@
-package com.galaxy.model;
+package com.mainPackage.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

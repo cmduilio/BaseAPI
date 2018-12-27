@@ -1,14 +1,12 @@
-package com.galaxy.controller;
+package com.mainPackage.controller;
 
-import com.galaxy.repository.DayRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 //implementation of controller interface
 @RestController
-public class PingController implements com.galaxy.controller.Controller{
+public class PingController implements com.mainPackage.controller.Controller{
 
     private static final Logger log = LoggerFactory.getLogger(PingController.class);
 	@GetMapping

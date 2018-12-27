@@ -1,13 +1,13 @@
 
-package com.galaxy;
+package com.mainPackage;
 
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
-import com.galaxy.model.Day;
-import com.galaxy.repository.DayRepository;
+import com.mainPackage.model.Day;
+import com.mainPackage.repository.DayRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +17,7 @@ import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.client.RestTemplate;
 
-import com.galaxy.controller.PingController;
+import com.mainPackage.controller.PingController;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Application.class, webEnvironment = WebEnvironment.DEFINED_PORT)

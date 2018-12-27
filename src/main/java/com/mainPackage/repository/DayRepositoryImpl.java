@@ -1,10 +1,10 @@
-package com.galaxy.repository;
+package com.mainPackage.repository;
 
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.transaction.Transactional;
 
-import com.galaxy.model.Day;
+import com.mainPackage.model.Day;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,4 @@
-package com.galaxy.service;
-
-import java.util.List;
+package com.mainPackage.service;
 
 //Interface for all services
 public interface Service<T> {

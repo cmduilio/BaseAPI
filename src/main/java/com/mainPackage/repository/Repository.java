@@ -1,4 +1,4 @@
-package com.galaxy.repository;
+package com.mainPackage.repository;
 
 import java.util.List;
 
