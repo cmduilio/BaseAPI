@@ -7,7 +7,7 @@ import java.util.List;
 
 //interface for dayDao, adding getByDay
 @Repository
-public class DayRepository extends BaseRepository<Day> {
+    public class DayRepository extends BaseRepository<Day> {
 
     public List<Day> getList() {
         return super.getList(Day.class);
