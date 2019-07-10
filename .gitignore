@@ -3,3 +3,6 @@ BaseAPI.iml
 target/
 .gradle/
 out/
+gradlew
+gradlew.bat
+gradle/
