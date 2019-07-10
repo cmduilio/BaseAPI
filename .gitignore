@@ -1,3 +1,5 @@
 .idea/
 BaseAPI.iml
 target/
+.gradle/
+out/
