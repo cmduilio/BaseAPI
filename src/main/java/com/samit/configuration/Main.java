@@ -30,6 +30,7 @@ public class Main extends AbstractModule {
         exception(PingException.class, this::badRequest);
     }
 
+    //create a handler or something?
     private void badRequest(Exception exception, Request req, Response res) {
         res.status(HttpStatus.SC_BAD_REQUEST);
         res.body("");
